@@ -1,0 +1,46 @@
+version: "3.0"
+services:
+  users:
+    build: 
+        context: ./udagram-services/user-service
+        args:
+            - NODE_ENV=development
+            - POSTGRES_USERNAME=udagram
+            - POSTGRES_PASSWORD=Dragon1234
+            - POSTGRES_HOST=udagram.clxstu5kwbxs.us-east-1.rds.amazonaws.com
+            - POSTGRES_DB=udagram
+            - AWS_BUCKET=udagram-microservices-jdejesus-dev
+            - AWS_REGION=us-east-1
+            - AWS_PROFILE=default
+            - JWT_SECRET=#@.Dragon.#
+    image: jdejesus11/udacity-aws:udagram-user-service
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: development
+  feeds:
+    build: 
+        context: ./udagram-services/feed-service
+        args:
+            - NODE_ENV=development
+            - POSTGRES_USERNAME=udagram
+            - POSTGRES_PASSWORD=Dragon1234
+            - POSTGRES_HOST=udagram.clxstu5kwbxs.us-east-1.rds.amazonaws.com
+            - POSTGRES_DB=udagram
+            - AWS_BUCKET=udagram-microservices-jdejesus-dev
+            - AWS_REGION=us-east-1
+            - AWS_PROFILE=default
+            - JWT_SECRET=#@.Dragon.#
+    image: jdejesus11/udacity-aws:udagram-feed-service
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: development
+  reverse-proxy:
+    build: 
+        context: ./udagram-services/reverse-proxy-service
+    image: jdejesus11/udacity-aws:udagram-reverse-proxy-service
+  app:
+    build: 
+        context: ./udagram-app
+    image: jdejesus11/udacity-aws:udagram-app

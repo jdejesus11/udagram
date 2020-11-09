@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,2BAA2B;CACxC",
+    "sources": [
+        "feed-list.component.scss"
+    ],
+    "names": [],
+    "file": "feed-list.component.css"
+}

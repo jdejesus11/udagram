@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "auth-menu-user.component.scss"
+    ],
+    "names": [],
+    "file": "auth-menu-user.component.css"
+}
