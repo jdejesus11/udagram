@@ -22,7 +22,7 @@ before_install:
 
 
 install:
-  - docker-compose -f docker-compose.yml build --parallel s
+  - docker-compose -f docker-compose.yml build --parallel 
   - docker-compose -f docker-compose.yml push
 
 script:
