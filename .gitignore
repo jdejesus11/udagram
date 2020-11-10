@@ -1,20 +1,6 @@
-# ignore all files starting with . or ~
-.DS_Store
-Thumbs.db
-UserInterfaceState.xcuserstate
-node_modules
-venv/
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-
-
 # ignore node/grunt dependency directories
 **/node_modules/
-**/build/
-**/www/
+
 
 # ignore composer vendor directory
 **/vendor
@@ -26,8 +12,8 @@ venv/
 **/_site
 
 # ignore OS generated files
-ehthumbs.db
-Thumbs.db
+**/ehthumbs.db
+**/Thumbs.db
 
 # ignore Editor files
 *.sublime-project
