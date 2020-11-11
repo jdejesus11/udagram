@@ -2,14 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    service: udagram-feeds-api
-  name: udagram-feeds-api-svc
+    service: udagram-feeds-service
+  name: udagram-feeds-service-svc
 spec:
   ports:
-  - name: "8080"
+  - name: "80"
     port: 80
-    targetPort: 8080
+    targetPort: 5000
   selector:
-    app: udagram-feeds-api 
+    app: udagram-feeds-service
 
     
