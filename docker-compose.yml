@@ -13,7 +13,7 @@ services:
       - POSTGRES_HOST=udagram.ck9glbuovftc.us-west-2.rds.amazonaws.com
       - POSTGRES_DB=udagram
       - AWS_BUCKET=udagram-396242104882-dev
-      - AWS_REGION=us-weast-2
+      - AWS_REGION=us-west-2
       - AWS_PROFILE=default
       - JWT_SECRET=#@.Dragon.#
       - PORT=3000
@@ -30,7 +30,7 @@ services:
       - POSTGRES_HOST=udagram.ck9glbuovftc.us-west-2.rds.amazonaws.com
       - POSTGRES_DB=udagram
       - AWS_BUCKET=udagram-396242104882-dev
-      - AWS_REGION=us-weast-2
+      - AWS_REGION=us-west-2
       - AWS_PROFILE=default
       - JWT_SECRET=#@.Dragon.#
       - PORT=5000
