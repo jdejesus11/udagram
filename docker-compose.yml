@@ -17,7 +17,6 @@ services:
       - AWS_PROFILE=default
       - JWT_SECRET=#@.Dragon.#
       - PORT=3000
-      - URL=http://localhost:3000
   feeds:
     build: 
         context: ./udagram-services/feed-service
@@ -35,7 +34,6 @@ services:
       - AWS_PROFILE=default
       - JWT_SECRET=#@.Dragon.#
       - PORT=5000
-      - URL=http://localhost:5000
   reverse-proxy:
     build: 
         context: ./udagram-services/reverse-proxy-service
